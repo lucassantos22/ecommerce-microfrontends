@@ -11,7 +11,7 @@ module.exports = {
             template: './public/index.html'
         }),
         new ModuleFederationPlugin({
-            name: 'products',
+            name: 'products', // name is required only for remotes
             filename: 'remoteEntry.js',
             exposes: {
               './ProductsIndex': './src/index',
