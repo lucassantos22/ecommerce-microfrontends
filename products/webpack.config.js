@@ -14,7 +14,7 @@ module.exports = {
             name: 'products', // name is required only for remotes
             filename: 'remoteEntry.js',
             exposes: {
-              './ProductsIndex': './src/index',
+              './ProductsIndex': './src/bootstrap',
             },
             shared: {
                 faker: {
